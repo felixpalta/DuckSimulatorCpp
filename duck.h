@@ -18,6 +18,7 @@ public:
     void perform_quacking() const;
     virtual void display() const = 0;
     void swim() const;
+    void set_fly_behavior(FlyBehaviour *f);
     virtual ~Duck();
 
 private:

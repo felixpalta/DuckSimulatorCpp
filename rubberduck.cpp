@@ -12,8 +12,6 @@ RubberDuck::RubberDuck()
 
 RubberDuck::~RubberDuck()
 {
-    delete _flying;
-    delete _quacking;
 }
 
 void RubberDuck::display() const

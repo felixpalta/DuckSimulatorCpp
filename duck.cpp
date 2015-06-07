@@ -10,6 +10,8 @@ Duck::Duck(FlyBehaviour *f, QuackBehaviour *q)
 
 Duck::~Duck()
 {
+    delete _flying;
+    delete _quacking;
 }
 
 void Duck::perform_flying() const
@@ -25,4 +27,10 @@ void Duck::perform_quacking() const
 void Duck::swim() const
 {
     cout << "Swimming is the same for all ducks" << endl;
+}
+
+void Duck::set_fly_behavior(FlyBehaviour *f)
+{
+    delete _flying;
+    _flying = f;
 }

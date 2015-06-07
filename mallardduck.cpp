@@ -12,8 +12,6 @@ MallardDuck::MallardDuck()
 
 MallardDuck::~MallardDuck()
 {
-    delete _flying;
-    delete _quacking;
 }
 
 void MallardDuck::display() const

@@ -12,8 +12,6 @@ DecoyDuck::DecoyDuck()
 
 DecoyDuck::~DecoyDuck()
 {
-    delete _flying;
-    delete _quacking;
 }
 
 void DecoyDuck::display() const
